@@ -19,13 +19,17 @@ for _file in os.listdir(target_directory):
     #print(_file)
     #print(os.path.isdir(target_directory+"\\"+_file))
     if(_file[-4:] in picture_list):
-        print("Picture!")
+        print("Picture! Moved to appropriate folder")
+        os.rename(target_directory+'\\'+_file, target_directory+'\\Pictures\\'+_file)
     elif(_file[-4:] in document_list):
-        print("Document!")
+        print("Document! Moved to appropriate folder")
+        os.rename(target_directory+'\\'+_file, target_directory+'\\Documents\\'+_file)
     elif(_file[-4:] in movie_list):
-        print("Movie!")
+        print("Movie! Moved to appropriate folder")
+        os.rename(target_directory+'\\'+_file, target_directory+'\\Movies\\'+_file)
     elif(_file[-4:] == ".exe"):
-        print("Application!")
+        print("Application! Moved to appropriate folder")
+        os.rename(target_directory+'\\'+_file, target_directory+'\\Applications\\'+_file)
     elif((os.path.isdir(target_directory+"\\"+_file))):
         pass
     else:
