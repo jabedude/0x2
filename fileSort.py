@@ -10,10 +10,10 @@ movie_list = [".mp4", "webm"]
 print("Please enter the directory")
 target_directory = raw_input(">")
 
-os.makedirs(target_directory+r'\Pictures')
-os.makedirs(target_directory+r'\Documents')
-os.makedirs(target_directory+r'\Movies')
-os.makedirs(target_directory+r'\Applications')
+os.makedirs(target_directory+'\\Pictures')
+os.makedirs(target_directory+'\\Documents')
+os.makedirs(target_directory+'\\Movies')
+os.makedirs(target_directory+'\\Applications')
 
 for _file in os.listdir(target_directory):
     #print(_file)
