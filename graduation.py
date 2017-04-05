@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from datetime import date
 
-t = date(2018,3,24) -date.today()
+t = date(2018,2,16) -date.today()
 
 print('{} days until graduation!'.format(t.days))
